@@ -303,7 +303,7 @@ a:active {
 
 .row {
     padding: 0;
-    max-width: 960px;
+    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -553,7 +553,8 @@ a:active {
 }
 
 .article-two-cols {
-    padding: 26px 0 34px 0;
+    /*padding: 26px 0 34px 0;*/
+    padding: 16px 0 19px 0;
     border-bottom: 1px solid #393939;
 }
 
@@ -612,7 +613,7 @@ a:active {
 }
 
 .contacts-block {
-    margin: 9px 0 0 0;
+    /*margin: 9px 0 0 0;*/
 }
 
 .contacts-header {
@@ -803,7 +804,8 @@ footer {
 }
 
 .footer {
-    padding-bottom: 52px;
+    /*padding-bottom: 52px;*/
+    /*padding-bottom: 20px;*/
 }
 
 .footer .col {
