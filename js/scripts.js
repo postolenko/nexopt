@@ -6,7 +6,7 @@ $(document).ready(function() {
     var footerCoor;
 
     // ----------------------------
-
+    var parentEl;
     var indexVideoBox;
     var videoIdAttr;
 
@@ -29,16 +29,13 @@ $(document).ready(function() {
 
     $(function() {
 
-        // var indexVideoBox;
-        // var videoIdAttr;
-
         $(".video-masck").on("click", function(playBtnEvent) {
+
+            playBtnEvent.preventDefault();
 
             parentEl = $(this).closest(".video-box");
 
             indexVideoBox = parentEl.index(".video-box");
-
-            console.log(indexVideoBox);
 
             videoIdAttr = "video_" + indexVideoBox;
             
@@ -46,8 +43,7 @@ $(document).ready(function() {
 
             $(this).fadeOut(300);
 
-            $("#" + videoIdAttr)[0].src += "?rel=0&autoplay=1";
-            playBtnEvent.preventDefault();
+            $("#" + videoIdAttr)[0].src += "?rel=0&autoplay=1";            
 
         });
 
