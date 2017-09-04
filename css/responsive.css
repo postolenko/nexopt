@@ -4,13 +4,32 @@
 		padding: 0 2%;
 	}
 
+
+	/*-- Section 2 Inner Page --*/
+
+	.article-thumbnail:nth-child(odd) {
+	    padding-right: 1.5%;
+	}
+
+	.article-thumbnail:nth-child(even) {
+	    padding-left: 1.5%;
+	}
+
+	.article-thumbnail .img-box {
+		height: auto;
+	    min-height: 225px;
+	    max-height: 245px;
+	}
+
+	/*-- /Section 2 Inner Page --*/
+
+	/*-- Footer --*/
+
 	.footer .col {
 		text-align: left;
 	    padding-top: 9px;
 	    padding-bottom: 9px;
-	}
-
-	/*-- Footer --*/
+	}	
 
 	.footer .col-1,
 	.footer .col-2,
@@ -113,12 +132,117 @@
 
 	/*-- /Section 3 Main Page --*/
 
+	/*-- Section 2 Inner Page --*/
+
+	.article-thumbnail {
+		width: 100%;
+		padding: 23px 0 11px 0;
+		text-align: center;
+		border-bottom: 1px solid #ededed;
+	}
+
+	.article-thumbnail:last-child {
+		border-bottom: none;
+	}
+
+	.article-thumbnail:nth-child(odd) {
+	    padding-right: 0;
+	}
+
+	.article-thumbnail:nth-child(even) {
+	    padding-left: 0;
+	}
+
+	.article-thumbnail .inner {
+		text-align: left;
+	}
+
+	.article-thumbnail .img-box {
+	    height: auto;
+	    min-height: auto;
+	    max-height: 257px;
+	}
+
+	/*-- /Section 2 Inner Page --*/
+
+	/*-- Section 8 Inner Page --*/
+
+	.header-table {
+	   	width: 44%;
+	    margin: 0 0 0 6%;
+	}
+
+	.img-header-thumbnails .thumbnail {
+	    width: 50%;
+	    padding-left: 6%;
+	}
+
+	.chart-thumbnails .thumbnail {
+	    width: 100%;
+	}
+
+	.chart-thumbnails .thumbnail .col-1 {
+	    padding-top: 8px;
+	}
+
+	.chart-thumbnails .thumbnail .inner {
+	    width: 100%;
+	}
+
+	/*-- /Section 8 Inner Page --*/
+
+	/*-- Section 10 Inner Page --*/
+
+	.single-article.right-bg {
+		padding-right: 0;
+	}
+
+	.single-article.right-bg.right-img-1 {
+	    background-image: none;	    
+	}
+
+	/*-- /Section 10 Inner Page --*/
+
+	/*-- Section 11 Inner Page --*/
+
+	.video-box {
+	    height: 445px;
+	    margin: 23px 0;
+	}
+
+	.video-box iframe {
+	    height: 445px;
+	}
+
+	/*-- /Section 11 Inner Page --*/
+
 }
 
 @media only screen and (max-width: 600px) {
 
 	.row {
 		padding: 0 4%;
+	}
+
+	h1 {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+
+	h2 {
+	    font-size: 19px;
+	    line-height: 27px;
+	    padding: 15px 0 5px 0;
+	}
+
+	.header-block h2 {
+	    font-size: 16px;
+	    line-height: 23px;
+	}
+
+	.img-thumbnail .descript h4 {
+	    font-size: 15px;
+	    line-height: 21px;
 	}
 
 	/*-- Section 1 Main Page --*/
@@ -147,6 +271,56 @@
 
 	/*-- /Section 1 Main Page --*/
 
+	/*-- Section 7 Inner Page --*/
+
+	.bricks-thumbnails .thumbnail {
+	    width: 100%;
+	    border-bottom: 1px solid #ededed;
+	}
+
+	.bricks-thumbnails .thumbnail:last-child {
+	    border-bottom: none;
+	}
+
+	.bricks-thumbnails .thumbnail:nth-child(odd) {
+	    padding-right: 0;
+	}
+
+	.bricks-thumbnails .thumbnail:nth-child(even) {
+	    padding-left: 0;
+	}
+
+	/*-- /Section 7 Inner Page --*/
+
+	/*-- Section 8 Inner Page --*/
+
+	.header-table {
+	   	width: 100%;
+	   	max-width: 460px;
+	    margin: 0;
+	}
+
+	.img-header-thumbnails {
+	    text-align: left;
+	    margin-bottom: 21px;
+	}
+
+	.img-header-thumbnails .thumbnail {
+	    width: 100%;
+	    max-width: 460px;
+	    padding-left: 0;
+	}
+
+	.chart-thumbnails .thumbnail {
+	    width: 100%;
+	}
+
+	.chart-thumbnails .thumbnail .col-1 {
+	    padding-top: 8px;
+	}
+
+	/*-- /Section 8 Inner Page --*/
+
 }
 
 
@@ -159,6 +333,31 @@
 	h1 {
 	    font-size: 12px;
 	    line-height: 13px;
+	}
+
+	h2 {
+	    font-size: 18px;
+	    line-height: 25px;
+	}
+
+	ol li {
+	    font-size: 15px;
+	    line-height: 23px;
+	}
+
+	ol li:before {
+		position: relative;
+	    top: -3px;
+	}
+
+	.header-block .col-1 {
+	    width: 62px;
+	}
+
+	.header-block h2 {
+	    font-size: 16px;
+	    line-height: 19px;
+	    font-weight: bold;
 	}
 
 	/*-- Header --*/
@@ -218,6 +417,44 @@
 	}
 
 	/*-- /Section 3 Main Page --*/
+
+	/*-- Section 2 Inner Page --*/
+
+	.article-thumbnail .descript h3 {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	/*-- /Section 2 Inner Page --*/
+
+	/*-- Section 3 Inner Page --*/
+
+	.contacts-header h2 {
+	    font-size: 17px;
+	    line-height: 28px;
+	}
+
+	/*-- /Section 3 Inner Page --*/
+
+	/*-- Section 10 Inner Page --*/
+
+	.header-block .col-2 .blue-icon-box {
+	    display: none;
+	}
+
+	/*-- /Section 10 Inner Page --*/
+
+	/*-- Section 11 Inner Page --*/
+
+	.video-box {
+	    height: 290px;
+	}
+
+	.video-box iframe {
+	    height: 290px;
+	}
+
+	/*-- /Section 11 Inner Page --*/
 
 	/*-- Footer --*/
 
