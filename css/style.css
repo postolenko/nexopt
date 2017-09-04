@@ -417,7 +417,52 @@ textarea {
 .promo-thumbnails {
     width: 103%;
     margin: 7px 0 3px -1.5%;
+    -webkit-animation: fade_elem 2s ease;
+    -moz-animation:    fade_elem 2s ease;
+    -o-animation:      fade_elem 2s ease;
+    animation:         fade_elem 2s ease;
 }
+
+@keyframes fade_elem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade_elem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade_elem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade_elem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .promo-thumbnails .thumbnail {
     display: inline-block;

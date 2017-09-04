@@ -8,13 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
-	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Nex Opt - Система дистанционного управления транспортными средствами</title>
 
@@ -32,7 +29,7 @@
 			
 			<div class="row clearfix">
 				<div class="col col-1 left">
-					<a href="#" class="logo-link">
+					<a href="presentation.html" class="logo-link">
 						<img src="img/logo.png" alt="" />
 					</a>
 				</div>
@@ -58,18 +55,18 @@
 						<div class="promo-thumbnails offset-ziro">
 
 							<div class="thumbnail">
-								<a href="#" class="inner" style="background-image: url(img/thumb_01.jpg)">
+								<a href="presentation.html" class="inner" style="background-image: url(img/thumb_01.jpg)">
 									<div class="mask">
 										<div class="icon-box">
-											<img src="img/icon_1.png" alt="" />
+											<img src="img/icon_09.png" alt="" />
 										</div>
 
 										<div class="icon-box">
-											<img src="img/icon_2.png" alt="" />
+											<img src="img/icon_06.png" alt="" />
 										</div>
 
 										<div class="icon-box">
-											<img src="img/icon_3.png" alt="" />
+											<img src="img/icon_05.png" alt="" />
 										</div>
 									</div>
 
@@ -80,7 +77,7 @@
 							</div>
 
 							<div class="thumbnail">
-								<a href="#" class="inner" style="background-image: url(img/thumb_02.jpg)">
+								<a href="presentation.html" class="inner" style="background-image: url(img/thumb_02.jpg)">
 									<div class="mask">
 										<div class="icon-box">
 											<img src="img/icon_1.png" alt="" />
@@ -102,18 +99,18 @@
 							</div>
 
 							<div class="thumbnail">
-								<a href="#" class="inner" style="background-image: url(img/thumb_03.jpg)">
+								<a href="presentation.html" class="inner" style="background-image: url(img/thumb_03.jpg)">
 									<div class="mask">
 										<div class="icon-box">
-											<img src="img/icon_1.png" alt="" />
+											<img src="img/icon_07.png" alt="" />
 										</div>
 
 										<div class="icon-box">
-											<img src="img/icon_2.png" alt="" />
+											<img src="img/icon_04.png" alt="" />
 										</div>
 
 										<div class="icon-box">
-											<img src="img/icon_3.png" alt="" />
+											<img src="img/icon_08.png" alt="" />
 										</div>
 									</div>
 
@@ -125,7 +122,7 @@
 
 						</div>
 
-						<a href="#" class="blue-pill">Смотреть презентацию</a>
+						<a href="presentation.html" class="blue-pill">Смотреть презентацию</a>
 
 					</div>
 				</section>
@@ -190,27 +187,28 @@
 								</div>
 								<div class="col col-2 right">
 									<div class="form-block">
-										<form>
+										<form id="feedback_form" method="post" action="processform.php">
 											<div class="clearfix">
 												<div class="form-col form-col-1 left">
 													<div class="input-block">
-														<input type="text" placeholder="Ваше имя">
+														<input type="text" placeholder="Ваше имя" name="name">
 													</div>
 													<div class="input-block">
-														<input type="email" placeholder="E-mail">
+														<input type="email" placeholder="E-mail" name="email">
 													</div>
 													<div class="input-block">
-														<input type="number" placeholder="Контактный телефон">
+														<input type="tel" placeholder="Контактный телефон" name="tel">
 													</div>
 												</div>
 												<div class="form-col form-col-2 right">
 													<div class="input-block">
-														<textarea placeholder="Сообщение"></textarea>
+														<textarea placeholder="Сообщение" name="msg"></textarea>
 													</div>
 												</div>
 											</div>
 											<div class="align-right">
 												<input type="submit" class="submit-btn" value="Отправить">
+												<div id="sendresult"></div>
 											</div>
 										</form>
 									</div>
@@ -233,7 +231,7 @@
 			<div class="footer">
 				<div class="row clearfix">
 					<div class="col col-1 left">
-						<a href="#" class="footer-logo">
+						<a href="https://www.steinbauer-engineering.com/" class="footer-logo">
 							<img src="img/steinbauer.png" alt="">
 						</a>
 					</div>

@@ -8,13 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
-	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Nex Opt - Система дистанционного управления транспортными средствами</title>
 
@@ -32,7 +29,7 @@
 			
 			<div class="row clearfix">
 				<div class="col col-1 left">
-					<a href="#" class="logo-link">
+					<a href="/" class="logo-link">
 						<img src="img/logo.png" alt="" />
 					</a>
 				</div>
@@ -60,7 +57,7 @@
 
 					<p>Опираясь на 20-летний опыт в разработке и производстве передовых электронных систем управления двигателем, мы предоставляем вам уникальные возможности мониторинга и контроля автомобилей в режиме Онлайн.</p>
 
-					<h2>Дистанционное управление транспортными средствами нового покодения</h2>
+					<h2>Дистанционное управление транспортными средствами нового поколения</h2>
 
 					<ol>
 						<li>Полный контроль над автомобилем в режиме Онлайн</li>
@@ -1305,27 +1302,28 @@
 							</div>
 							<div class="col col-2 right">
 								<div class="form-block">
-									<form>
+									<form id="feedback_form" method="post" action="processform.php">
 										<div class="clearfix">
 											<div class="form-col form-col-1 left">
 												<div class="input-block">
-													<input type="text" placeholder="Ваше имя">
+													<input type="text" placeholder="Ваше имя" name="name">
 												</div>
 												<div class="input-block">
-													<input type="email" placeholder="E-mail">
+													<input type="email" placeholder="E-mail" name="email">
 												</div>
 												<div class="input-block">
-													<input type="number" placeholder="Контактный телефон">
+													<input type="tel" placeholder="Контактный телефон" name="tel">
 												</div>
 											</div>
 											<div class="form-col form-col-2 right">
 												<div class="input-block">
-													<textarea placeholder="Сообщение"></textarea>
+													<textarea placeholder="Сообщение" name="msg"></textarea>
 												</div>
 											</div>
 										</div>
 										<div class="align-right">
 											<input type="submit" class="submit-btn" value="Отправить">
+											<div id="sendresult"></div>
 										</div>
 									</form>
 								</div>
@@ -1344,7 +1342,7 @@
 
 		<!-- Footer -->
 
-		<!-- <footer>
+		<footer>
 			
 			<div class="footer">
 				<div class="row clearfix">
@@ -1378,7 +1376,7 @@
 				</div>
 			</div>			
 
-		</footer> -->
+		</footer>
 
 		<!-- /Footer -->
 
