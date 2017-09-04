@@ -485,3 +485,11 @@
 	/*-- /Footer --*/
 
 }
+
+@media only screen and (max-width: 480px) {
+
+	.header-site .col-1 {
+	    padding-top: 10px;
+	}
+
+}
