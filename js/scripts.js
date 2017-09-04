@@ -7,6 +7,11 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var indexVideoBox;
+    var videoIdAttr;
+
+    // ----------------------------
+
     getFooterPosition();
 
     $(window).resize(function() {
@@ -24,7 +29,27 @@ $(document).ready(function() {
 
     $(function() {
 
+        // var indexVideoBox;
+        // var videoIdAttr;
 
+        $(".video-masck").on("click", function(playBtnEvent) {
+
+            parentEl = $(this).closest(".video-box");
+
+            indexVideoBox = parentEl.index(".video-box");
+
+            console.log(indexVideoBox);
+
+            videoIdAttr = "video_" + indexVideoBox;
+            
+            parentEl.find("iframe").attr("id", videoIdAttr);
+
+            $(this).fadeOut(300);
+
+            $("#" + videoIdAttr)[0].src += "?rel=0&autoplay=1";
+            playBtnEvent.preventDefault();
+
+        });
 
     });
 
